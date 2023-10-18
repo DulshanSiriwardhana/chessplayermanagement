@@ -1,0 +1,326 @@
+*{
+  margin:0;
+  padding:10;
+  text-decoration: none;
+}
+
+.containerforNavBar{
+  display:flex;
+  margin-left: -12px;
+}
+.head{
+  display:flex;
+  margin-left: 0px;
+  height: 100px;
+}
+.headtext{
+  background-color: rgb(0, 0, 0);
+  text-wrap: wrap;
+  color: #fff;
+  text-align: center;
+  font-size:x-large;
+  font-weight: 800;
+}
+main{
+  width: 100%;
+  padding: 20px;
+}
+.sidebar{
+  background: #08624a;
+  color: #fff;
+  height:inherit;
+  width: 160px;
+  transition: all 0.5s;
+}
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:10px 15px;
+}
+.logo{
+  width: 60px;
+  border-radius: 50px;
+}
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  text-decoration: none;
+  display: flex;
+  color: hsl(0, 0%, 100%);
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+.link:hover{
+  background:rgb(147, 223, 235);
+  color: #000;
+  transition: all 0.5s;
+}
+.active{
+  background: #7dcdb9;
+  color: #000;
+}
+.icon, .link_text{
+  font-size: 20px;
+  text-decoration: none;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  height: 100px;
+}
+.footer{
+  background-color: #000000;
+  color: white;
+}
+.header>img{
+  margin-left: 0px;
+  width:50px;
+  border-radius: 50px;
+}
+.header>p{
+  text-wrap: wrap;
+  color: #fff;
+  text-align: center;
+  font-size:x-large;
+  font-weight: 800;
+}
+.AddChessPlayerContainer{
+  width:300px;
+}
+.AddChessPlayerForm{
+  background-color: #08ad8c;
+  padding: 20px;
+  border-radius: 20px;
+}
+.ClubTable {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ClubTable h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.HomeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.HomeContainer h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.HomeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.HomeForm label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.HomeForm input[type="text"],
+.HomeForm input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.HomeForm button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.HomeForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.HomeDetails {
+  margin-top: 20px;
+  text-align: center;
+}
+.aboutText{
+  background-color: #e8dead;
+  border-width: 1px;
+  max-width: 200%;
+  min-width: 600px;
+  border-style: solid;
+  border-color:#000202;
+  padding: 20px;
+}
+.aboutText h1{
+  font-style:italic;
+  color: #000000;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.aboutText h2{
+  font-style:italic;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+/* CSS Variables */
+:root {
+  --color-form-highlight:#08ad8c;
+  --half-spacing-unit: 10px; /* Example value */
+}
+
+/* Table Styles */
+.pairing-table {
+  width: 100%;
+  border: 1px solid var(--color-form-highlight);
+}
+
+.pairing-table .table-header {
+  display: flex;
+  width: 100%;
+  background: #000;
+  padding: calc(var(--half-spacing-unit) * 1.5) 0;
+}
+
+.pairing-table .table-row {
+  display: flex;
+  width: 100%;
+  padding: calc(var(--half-spacing-unit) * 1.5) 0;
+}
+
+.pairing-table .table-row:nth-of-type(odd) {
+  background: var(--color-form-highlight);
+}
+
+.pairing-table .table-data,
+.pairing-table .header__item {
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+.pairing-table .header__item {
+  text-transform: uppercase;
+}
+
+
+
+/* Games.css */
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #c2e3cd;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.new-game-button {
+  margin-top: 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.new-game-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Add this CSS in a separate .css file or inside a <style> tag within your component */
+
+table.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  background-color: #8d1717;
+}
+
+table.table th {
+  background-color: #0a668a;
+  color: #fff;
+}
+
+table.table th,
+table.table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #000000;
+}
+
+table.table tbody tr:nth-child(even) {
+  background-color: #cbabab;
+}
+
+table.table .btn-danger {
+  background-color: #0fa17a;
+  color: #fff;
+  border: none;
+}
+
+table.table .btn-danger:hover {
+  background-color: #c0392b;
+}
+
+table.table th,
+table.table td {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  table.table {
+    font-size: 0.9em;
+  }
+}
+
+/*some other css*/
+/* Pairing.css */
+
+.box {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px 2px
+}
+
+/* Add your desired styles here */
+
